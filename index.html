@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="./styles/style.css" rel="stylesheet" type="text/css">
     <title>Dreamy Pet Survey</title>
   </head>
   <body>
@@ -13,7 +14,7 @@
         This survey wants to know which pet you have been dreaming.
       </p>
       <p class="text">
-        Please answerthe following questions. Your answers are so important to
+        Please answer the following questions. Your answers are so important to
         us. Thank you :)
       </p>
       <p class="text">Filds marked with (*) are required.</p>
@@ -21,9 +22,41 @@
       <form>
         <fieldset class="fieldset">
           <legend>Personal Information</legend>
+          <label for="name" class="label">Name*:</label>
+          <input
+            type="text"
+            class="field"
+            name="name"
+            id="name"
+            requerid
+            placeholder="Name"
+          />
+          <label for="email" class="label">Email*:</label>
+          <input
+            type="text"
+            class="field"
+            name="email"
+            id="email"
+            requerid
+            placeholder="Email"
+          />
+          <label for="age" class="label">Age*:</label>
+          <input type="text" class="field" name="age" id="age" requerid
+          placeholder="Age"
         </fieldset>
         <fieldset class="fieldset">
           <legend>Survey Information:</legend>
+          <p class="question">1. What is your dram pet?</p>
+          <select name="dream-pet" id="dream-pet">
+            <option value="">Please select an opition</option>
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="hamster">Hamster</option>
+            <option value="horse">Horse</option>
+            </select> 
+
+            </p>
+          <input type="radio" name="color" value="pink"><label>Pink</label>
         </fieldset>
         <input type="submit" value="submit" />
       </form>
