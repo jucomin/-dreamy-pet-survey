@@ -19,3 +19,6 @@ body {
 .title {
   font-family: 'Luckiest Guy', cursive;
 }
+.field[required].invalid{
+  border-color.
+}
